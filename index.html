@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pesa es Pesca — material de pesca depredadora i no depredadora.">
+<title>Pesa es Pesca | Pesca des de 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="announcement">🎣 Enviaments i novetats de pesca · PESA ES PESCA DES DE 2026</div>
+
+<header class="header">
+  <a href="#inici" class="brand"><img src="logo.png" alt="Pesa es Pesca"></a>
+  <div class="header-actions">
+    <button class="icon-btn search-open" aria-label="Buscar">⌕</button>
+    <button class="cart-btn" id="cartOpen" aria-label="Obrir carret">🛒 <b id="cartCount">0</b></button>
+    <button class="menu-btn" id="menuOpen" aria-label="Obrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="searchbar" id="searchbar">
+  <div class="search-inner">
+    <input id="searchInput" type="search" placeholder="Busca canyes, carrets, fil..." autocomplete="off">
+    <button id="searchClose">×</button>
+  </div>
+</div>
+
+<nav class="mobile-menu" id="mobileMenu">
+  <div class="mobile-head">MENÚ <button id="menuClose">×</button></div>
+  <a href="#inici">Inici</a>
+  <a href="#depredador">Pesca depredador</a>
+  <a href="#no-depredador">Pesca no depredador</a>
+  <a href="#productes">Tots els productes</a>
+</nav>
+<div class="shade" id="shade"></div>
+
+<main id="inici">
+<section class="hero">
+  <div class="hero-copy reveal">
+    <span class="pill">PESA ES PESCA · DES DE 2026</span>
+    <h1>La nova millor web<br><em>de pesca :)</em></h1>
+    <p>Material, equipament i accessoris per sortir al riu i gaudir de la pesca.</p>
+    <div class="hero-buttons">
+      <a href="#productes" class="primary">Veure productes</a>
+      <a href="#categories" class="secondary">Explorar pesca</a>
+    </div>
+  </div>
+  <div class="hero-logo reveal delay">
+    <img src="logo.png" alt="Logo Pesa es Pesca">
+  </div>
+</section>
+
+<section class="stats">
+  <div><strong>2026</strong><span>Des de</span></div>
+  <div><strong>2</strong><span>Tipus de pesca</span></div>
+  <div><strong>∞</strong><span>Passió pel riu</span></div>
+</section>
+
+<section id="categories" class="section">
+  <div class="section-title">
+    <div><span>EXPLORA</span><h2>Quina pesca fas?</h2></div>
+    <p>Tria una categoria i troba el teu equip.</p>
+  </div>
+  <div class="category-grid">
+    <a href="#depredador" class="category-card predator">
+      <div class="category-art fish-art">🐟</div>
+      <div><span>PESCA</span><h3>Depredador</h3><p>Canya · Fil · Carret · Senyuelos</p></div>
+      <b>→</b>
+    </a>
+    <a href="#no-depredador" class="category-card nonpredator">
+      <div class="category-art">🎣</div>
+      <div><span>PESCA</span><h3>No depredador</h3><p>Canya · Fil · Carret</p></div>
+      <b>→</b>
+    </a>
+  </div>
+</section>
+
+<section id="productes" class="section products-section">
+  <div class="section-title">
+    <div><span>BOTIGA</span><h2>Productes destacats</h2></div>
+    <p>Una selecció per començar el teu equip.</p>
+  </div>
+  <div class="filters">
+    <button class="filter active" data-filter="all">Tots</button>
+    <button class="filter" data-filter="canya">Canyes</button>
+    <button class="filter" data-filter="carret">Carrets</button>
+    <button class="filter" data-filter="fil">Fil</button>
+  </div>
+  <div class="product-grid" id="productGrid"></div>
+  <div id="noResults" class="no-results">No hem trobat cap producte.</div>
+</section>
+
+<section id="depredador" class="section category-detail">
+  <div class="detail-copy">
+    <span>PESCA DEPREDADOR</span>
+    <h2>Equip per buscar<br>els grans depredadors.</h2>
+    <p>Selecciona canya, fil o carret. Els senyuelos estan temporalment sense estoc.</p>
+    <div class="mini-links">
+      <a href="#productes">Canya →</a><a href="#productes">Fil →</a><a href="#productes">Carret →</a>
+    </div>
+  </div>
+  <div class="detail-card">
+    <div class="big-fish">🐟</div>
+    <small>SENYUELOS</small><strong>NO HI HA ESTOC</strong>
+  </div>
+</section>
+
+<section id="no-depredador" class="section category-detail reverse">
+  <div class="detail-copy">
+    <span>PESCA NO DEPREDADOR</span>
+    <h2>Material senzill<br>per gaudir del riu.</h2>
+    <p>Fil, canya i carret per preparar una jornada tranquil·la de pesca.</p>
+    <div class="mini-links"><a href="#productes">Canya →</a><a href="#productes">Fil →</a><a href="#productes">Carret →</a></div>
+  </div>
+  <div class="detail-card calm"><div class="big-fish">🎣</div><small>EQUIPAMENT</small><strong>PREPARA'T PER PESCAR</strong></div>
+</section>
+
+<section class="cta">
+  <img src="logo.png" alt="">
+  <div><span>PESA ES PESCA</span><h2>Preparat per la propera captura?</h2></div>
+  <a href="#productes" class="primary">Veure botiga</a>
+</section>
+</main>
+
+<footer><img src="logo.png" alt=""><p>© 2026 Pesa es Pesca · Pesca amb respecte pel riu.</p></footer>
+
+<aside class="cart" id="cart">
+  <div class="cart-head"><h2>El teu carret</h2><button id="cartClose">×</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-bottom"><div><span>Total</span><strong id="cartTotal">0,00 €</strong></div><button class="checkout" id="checkout">Finalitzar compra</button><small>Demo: encara no hi ha pagaments reals.</small></div>
+</aside>
+
+<div class="product-modal" id="modal">
+  <div class="modal-box"><button class="modal-close" id="modalClose">×</button><div id="modalContent"></div></div>
+</div>
+
+<script>
+const products=[
+ {id:1,name:"Canya River Pro 2.40",cat:"canya",type:"Depredador",price:89.90,icon:"🎣",desc:"Canya lleugera i potent per pesca de riu."},
+ {id:2,name:"Canya River Light 2.10",cat:"canya",type:"No depredador",price:54.90,icon:"🎣",desc:"Opció versàtil per jornades de pesca tranquil·les."},
+ {id:3,name:"Carret Spin 3000",cat:"carret",type:"Depredador",price:64.90,icon:"⚙️",desc:"Carret de spinning amb cos compacte."},
+ {id:4,name:"Carret River 2500",cat:"carret",type:"No depredador",price:49.90,icon:"⚙️",desc:"Carret lleuger per equipaments petits."},
+ {id:5,name:"Fil Fluoro Strong 0.28",cat:"fil",type:"Depredador",price:14.90,icon:"〰️",desc:"Fil resistent per pesca de depredadors."},
+ {id:6,name:"Fil River Soft 0.20",cat:"fil",type:"No depredador",price:9.90,icon:"〰️",desc:"Fil fi i flexible per pesca de riu."}
+];
+let cart=[];
+const euro=n=>n.toLocaleString('ca-ES',{style:'currency',currency:'EUR'});
+const grid=document.getElementById('productGrid');
+function renderProducts(list=products){
+ grid.innerHTML=list.map(p=>`<article class="product" data-id="${p.id}">
+   <button class="product-image" data-info="${p.id}" aria-label="Veure ${p.name}"><span>${p.icon}</span><i>${p.type}</i></button>
+   <div class="product-body"><small>${p.cat.toUpperCase()}</small><h3>${p.name}</h3><p>${p.desc}</p>
+   <div class="product-foot"><strong class="stock-label">NO HI HA ESTOC</strong><button class="add disabled" disabled>Sense estoc</button></div></div>
+ </article>`).join('');
+ document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>add(+b.dataset.add));
+ document.querySelectorAll('[data-info]').forEach(b=>b.onclick=()=>info(+b.dataset.info));
+}
+function add(id){const p=products.find(x=>x.id===id);const item=cart.find(x=>x.id===id);if(item)item.qty++;else cart.push({...p,qty:1});renderCart();openCart();}
+function renderCart(){
+ document.getElementById('cartCount').textContent=cart.reduce((s,x)=>s+x.qty,0);
+ document.getElementById('cartItems').innerHTML=cart.length?cart.map(x=>`<div class="cart-item"><span>${x.icon}</span><div><b>${x.name}</b><small>${euro(x.price)}</small><div class="qty"><button onclick="changeQty(${x.id},-1)">−</button>${x.qty}<button onclick="changeQty(${x.id},1)">+</button></div></div></div>`).join(''):'<div class="empty-cart">El carret està buit.<br>Comença a explorar els productes 🎣</div>';
+ document.getElementById('cartTotal').textContent=euro(cart.reduce((s,x)=>s+x.price*x.qty,0));
+}
+function changeQty(id,d){const x=cart.find(x=>x.id===id);x.qty+=d;if(x.qty<=0)cart=cart.filter(y=>y.id!==id);renderCart()}
+function openCart(){document.getElementById('cart').classList.add('open');document.getElementById('shade').classList.add('show')}
+function closeCart(){document.getElementById('cart').classList.remove('open');document.getElementById('shade').classList.remove('show')}
+document.getElementById('cartOpen').onclick=openCart;document.getElementById('cartClose').onclick=closeCart;
+document.getElementById('shade').onclick=()=>{closeCart();closeMenu()};
+function info(id){const p=products.find(x=>x.id===id);document.getElementById('modalContent').innerHTML=`<div class="modal-art">${p.icon}</div><small>${p.cat.toUpperCase()} · ${p.type.toUpperCase()}</small><h2>${p.name}</h2><p>${p.desc}</p><strong class="modal-price">NO HI HA ESTOC</strong><button class="primary modal-add disabled" disabled>Sense estoc</button>`;document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+document.getElementById('modalClose').onclick=closeModal;
+document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')closeModal()};
+document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.filter;renderProducts(f==='all'?products:products.filter(p=>p.cat===f));});
+const searchbar=document.getElementById('searchbar');document.querySelector('.search-open').onclick=()=>{searchbar.classList.add('show');document.getElementById('searchInput').focus()};
+document.getElementById('searchClose').onclick=()=>searchbar.classList.remove('show');
+document.getElementById('searchInput').oninput=e=>{const q=e.target.value.toLowerCase();renderProducts(products.filter(p=>(p.name+p.cat+p.type+p.desc).toLowerCase().includes(q)));document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));document.querySelector('[data-filter="all"]').classList.add('active')};
+const menu=document.getElementById('mobileMenu');function openMenu(){menu.classList.add('open');document.getElementById('shade').classList.add('show')}function closeMenu(){menu.classList.remove('open');document.getElementById('shade').classList.remove('show')}
+document.getElementById('menuOpen').onclick=openMenu;document.getElementById('menuClose').onclick=closeMenu;
+document.querySelectorAll('.mobile-menu a').forEach(a=>a.onclick=closeMenu);
+document.getElementById('checkout').onclick=()=>alert("Aquesta és una botiga de demostració. El pagament encara no està activat.");
+const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.section,.category-card,.product,.cta').forEach(e=>observer.observe(e));
+renderProducts();renderCart();
+</script>
+</body>
+</html>
